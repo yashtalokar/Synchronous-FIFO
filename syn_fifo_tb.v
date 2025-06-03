@@ -1,10 +1,10 @@
 `timescale 1ns / 1ps
 
-module sync_fifo_tb();
+module syn_fifo_tb();
     reg clk, rst_n;
     reg wr, rd;
-    reg [29:0] data_in;
-    wire [29:0] data_out;
+    reg [7:0] data_in;
+    wire [7:0] data_out;
     wire fifo_full, fifo_empty;
     
     // Instantiation of FIFO
@@ -27,32 +27,32 @@ module sync_fifo_tb();
         wr = 0; rd = 0;
         
         // Apply reset
-        #10 rst_n = 1;
+        #10 rst_n = 11;
         
         // Write data to FIFO
         wr = 1;
-        data_in = 512;
+        data_in = 12;
         #10;
         
-        data_in = 2222;
+        data_in = 22;
         #10;
         
-        data_in = 312;
+        data_in = 16;
         #10;
         
-        data_in = 404;
+        data_in = 4;
         #10;
         
-        data_in = 5;
+        data_in = 25;
         #10;
         
-        data_in = 6;
+        data_in = 36;
         #10;
         
-        data_in = 7;
+        data_in = 17;
         #10;
         
-        data_in = 8;
+        data_in = 28;
         #10;
         
         
