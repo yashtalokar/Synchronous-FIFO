@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module syn_fifo_tb();
+module sync_fifo_tb();
     reg clk, rst_n;
     reg wr, rd;
     reg [29:0] data_in;
