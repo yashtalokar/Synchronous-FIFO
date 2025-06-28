@@ -69,8 +69,6 @@ module syn_fifo_tb();
     
     // Monitor signals
     initial begin
-        //$monitor("Time: %0t, data_in: %b, data_out: %b, fifo_full: %b, fifo_empty: %b", 
-                 // $time, data_in, data_out, fifo_full, fifo_empty);
       $dumpfile("dump.vcd"); $dumpvars;
     end
 endmodule
