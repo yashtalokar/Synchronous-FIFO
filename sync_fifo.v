@@ -60,8 +60,8 @@ module fifo_full_empty(
 );
 
   always@ (posedge clk) begin
-    full = (wptr[$clog2(`size)] ^ rptr[$clog2(`size)]) & (wptr[$clog2(`size)-1:0] == rptr[$clog2(`size)-1:0]);
-    empty = (~wptr[$clog2(`size)] ^ rptr[$clog2(`size)]) & (wptr[$clog2(`size)-1:0] == rptr[$clog2(`size)-1:0]);
+    full <= (wptr[$clog2(`size)] ^ rptr[$clog2(`size)]) & (wptr[$clog2(`size)-1:0] == rptr[$clog2(`size)-1:0]);
+    empty <= (~wptr[$clog2(`size)] ^ rptr[$clog2(`size)]) & (wptr[$clog2(`size)-1:0] == rptr[$clog2(`size)-1:0]);
 end
 endmodule
 
