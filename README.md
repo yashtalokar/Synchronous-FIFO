@@ -39,6 +39,12 @@ The Verilog design is tested with a testbench, simulated in ModelSim, and succes
 - **EDA Playground** (for early prototyping)
 - **Altera DE0 FPGA Board**
 
+## 🧩 Synthesized Design
+
+Below is the elaborated RTL schematic after synthesis in Quartus II:
+
+![Elaborated Design](doc/elaborated_design.png)
+
 
 ## 📊 Simulation & Testing
 
@@ -47,7 +53,9 @@ The testbench writes eight 8-bit values into the FIFO, then reads them back, ver
 ### 📊 Waveform
 ![Simulation Waveform](doc/waveform.png)
 
-## 🧪 Pin Mapping (DE0 Board)
+## 🔌 FPGA Deployment
+
+### 🧪 Pin Mapping (DE0 Board)
 
 | Signal       | Pin   | Direction | Description                  |
 |--------------|--------|-----------|------------------------------|
@@ -59,6 +67,14 @@ The testbench writes eight 8-bit values into the FIFO, then reads them back, ver
 | data_out[7:0]| J6..D1 | Output    | 8-bit parallel output        |
 | fifo_full    | F3     | Output    | FIFO full flag               |
 | fifo_empty   | Auto   | Output    | FIFO empty flag              |
+
+
+
+### 📷 Real Hardware Output
+Below is the DE0 FPGA board running the FIFO design:
+
+![FPGA Output](doc/fpga_output.png)
+
 
 ## 💡 Applications
 
