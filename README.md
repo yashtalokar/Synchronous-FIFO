@@ -1,7 +1,7 @@
 
 # Synchronous FIFO Memory (FPGA Implementation)
 
-This project presents the design, simulation, and FPGA implementation of a **Synchronous First-In-First-Out (FIFO) Memory Module**. The system is modeled using **Verilog HDL**, synthesized using **Intel Quartus II**, and implemented on the **Terasic DE0 Cyclone III FPGA board**.
+This project presents the design, simulation, and FPGA implementation of a **Synchronous First-In-First-Out (FIFO) Memory Module** with negative reset. The system is modeled using **Verilog HDL**, synthesized using **Intel Quartus II**, and implemented on the **Terasic DE0 Cyclone III FPGA board**.
 
 
 ## 📘 Abstract
@@ -43,7 +43,7 @@ The Verilog design is tested with a testbench, simulated in ModelSim, and succes
 
 Below is the elaborated RTL schematic after synthesis in Quartus II:
 
-![Elaborated Design](doc/elaborated_design.png)
+![Elaborated Design](Doc/design.png)
 
 
 ## 📊 Simulation & Testing
@@ -51,7 +51,7 @@ Below is the elaborated RTL schematic after synthesis in Quartus II:
 The testbench writes eight 8-bit values into the FIFO, then reads them back, verifying `fifo_full` and `fifo_empty` status. Waveform output is dumped for analysis using `$dumpfile`, `$dumpvars`, and `$monitor`.
 
 ### 📊 Waveform
-![Simulation Waveform](doc/waveform.png)
+![Simulation Waveform](Doc/waveform.png)
 
 ## 🔌 FPGA Deployment
 
@@ -73,7 +73,7 @@ The testbench writes eight 8-bit values into the FIFO, then reads them back, ver
 ### 📷 Real Hardware Output
 Below is the DE0 FPGA board running the FIFO design:
 
-![FPGA Output](doc/fpga_output.png)
+![FPGA Output](Doc/fpga.jpg)
 
 
 ## 💡 Applications
