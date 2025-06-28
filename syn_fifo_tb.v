@@ -27,32 +27,32 @@ module syn_fifo_tb();
         wr = 0; rd = 0;
         
         // Apply reset
-        #10 rst_n = 11;
+        #10 rst_n = 1;
         
         // Write data to FIFO
         wr = 1;
-        data_in = 12;
+        data_in = 1;
         #10;
         
-        data_in = 22;
+        data_in = 2;
         #10;
         
-        data_in = 16;
+        data_in = 3;
         #10;
         
         data_in = 4;
         #10;
         
-        data_in = 25;
+        data_in = 5;
         #10;
         
-        data_in = 36;
+        data_in = 155;
         #10;
         
-        data_in = 17;
+        data_in = 218;
         #10;
         
-        data_in = 28;
+        data_in = 60;
         #10;
         
         
