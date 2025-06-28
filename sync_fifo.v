@@ -1,7 +1,7 @@
 `timescale 1ns/1ps
 
-`define size 128 
-`define width 30
+`define size 16 
+`define width 8
 
 module fifo_mem(  
   input fifo_rd,fifo_wr,clk,
