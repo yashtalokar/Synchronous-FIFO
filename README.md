@@ -31,6 +31,8 @@ The Verilog design is tested with a testbench, simulated in ModelSim, and succes
 - Functional simulation and synthesis using **Quartus II Web Edition**
 - Deployed on **Terasic DE0** FPGA board
 
+## 🔗 EDA Playground
+- [https://edaplayground.com/x/dhcj]
 
 ## 🔧 Tools Used
 - **Verilog HDL**
