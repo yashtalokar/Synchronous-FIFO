@@ -53,7 +53,7 @@ Below is the elaborated RTL schematic after synthesis in Quartus II:
 The testbench writes eight 8-bit values into the FIFO, then reads them back, verifying `fifo_full` and `fifo_empty` status. Waveform output is dumped for analysis using `$dumpfile`, `$dumpvars`, and `$monitor`.
 
 ### 📊 Waveform
-![Simulation Waveform](Doc/waveform.png)
+![Simulation Waveform](Doc/Waveform.png)
 
 ## 🔌 FPGA Deployment
 
