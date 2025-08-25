@@ -8,7 +8,7 @@ module syn_fifo_tb();
     wire fifo_full, fifo_empty;
     
     
-  fifo_mem uut(.data_out(data_out), .fifo_full(fifo_full), .fifo_empty(fifo_empty), 
+  sync_fifo uut(.data_out(data_out), .full(fifo_full), .empty(fifo_empty), 
                .clk(clk),.rst_n(rst_n), .wr(wr), .rd(rd), .data_in(data_in));
     
     // Clock generation
